@@ -1,0 +1,16 @@
+{
+  "name": "verkkosivu_testaaja",
+  "version": "1.0.0",
+  "description": "Automaattinen verkkosivun testausagentti: tarkistaa rikkinaiset linkit, kuvat, konsolivirheet ja suorituskyvyn.",
+  "type": "module",
+  "bin": {
+    "verkkosivu-testaaja": "./app/cli.js"
+  },
+  "main": "./app/index.js",
+  "scripts": {
+    "test": "node app/cli.js"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
