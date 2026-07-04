@@ -12,8 +12,16 @@ Automaattinen verkkosivun testausagentti. Lataa annetun URL:n headless-selaimell
 
 ```bash
 npm install
+npx playwright install-deps
 npx playwright install chromium
 ```
+
+### WSL2
+
+Toimii WSL2:ssa normaalisti headless-tilassa (oletus) ilman erikoisjärjestelyjä.
+`playwright install-deps` asentaa Chromiumin vaatimat järjestelmäkirjastot, joita ei
+välttämättä ole valmiiksi WSL:n Linux-jakelussa. `--headed`-lippu vaatii lisäksi
+WSLg:n (Windows 11 / uudemmat WSL-versiot) tai erillisen X-serverin.
 
 ## Käyttö
 
